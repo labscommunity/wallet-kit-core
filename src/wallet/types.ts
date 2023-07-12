@@ -3,31 +3,6 @@ import type Transaction from "arweave/web/lib/transaction";
 import { PermissionType } from "./permissions";
 
 /**
- * Dispatch function result
- */
-export interface DispatchResult {
-  id: string;
-  type?: "BASE" | "BUNDLED";
-}
-
-/**
- * Application info
- */
-export interface AppInfo {
-  name?: string;
-  logo?: string;
-}
-
-/**
- * Arweave gateway configuration
- */
-export interface GatewayConfig {
-  host: string;
-  port: number;
-  protocol: "http" | "https";
-}
-
-/**
  * The "window.arweaveWallet" API
  */
 export interface ArweaveWalletApi {
@@ -164,6 +139,31 @@ export interface ArweaveWalletApi {
    * @returns Dispatched transaction ID and type
    */
   dispatch?(transaction: Transaction): Promise<DispatchResult>;
+}
+
+/**
+ * Dispatch function result
+ */
+export interface DispatchResult {
+  id: string;
+  type?: "BASE" | "BUNDLED";
+}
+
+/**
+ * Application info
+ */
+export interface AppInfo {
+  name?: string;
+  logo?: string;
+}
+
+/**
+ * Arweave gateway configuration
+ */
+export interface GatewayConfig {
+  host: string;
+  port: number;
+  protocol: "http" | "https";
 }
 
 declare global {
