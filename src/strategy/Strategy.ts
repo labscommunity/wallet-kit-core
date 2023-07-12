@@ -5,7 +5,7 @@ import type {
   AppInfo,
   GatewayConfig,
   DispatchResult
-} from "../wallet/types";
+} from "../wallet";
 
 export default abstract class Strategy {
   // info

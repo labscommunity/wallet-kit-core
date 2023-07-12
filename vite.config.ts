@@ -10,7 +10,8 @@ export default defineConfig({
     lib: {
       entry: {
         strategy: path.resolve(__dirname, "src/strategy/index.ts"),
-        wallet: path.resolve(__dirname, "src/wallet/index.ts")
+        wallet: path.resolve(__dirname, "src/wallet/index.ts"),
+        theme: path.resolve(__dirname, "src/theme/index.ts")
       },
       name: "@arweave-wallet-kit/core",
       formats: ["es", "cjs"],
