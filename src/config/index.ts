@@ -1,7 +1,10 @@
 import { AppInfo, GatewayConfig, PermissionType } from "../wallet";
+import { Strategy } from "../strategy";
 
 /** Global config for the kit */
 export interface Config {
+  /** Strategies used to use in the kit */
+  strategies: Strategy[];
   /** The permissions your app requires */
   permissions: PermissionType[];
   /**
@@ -17,6 +20,7 @@ export interface Config {
 }
 
 export const defaultConfig: Config = {
+  strategies: [],
   permissions: ["ACCESS_ADDRESS", "ACCESS_ALL_ADDRESSES"],
   ensurePermissions: false
 };
