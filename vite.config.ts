@@ -8,10 +8,13 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
+      entry: {
+        strategy: path.resolve(__dirname, "src/strategy/index.ts"),
+        wallet: path.resolve(__dirname, "src/wallet/index.ts")
+      },
       name: "@arweave-wallet-kit/core",
-      formats: ["es", "umd"],
-      fileName: (format) => `index.${format}.js`
+      formats: ["es", "cjs"],
+      fileName: (format, entryName) => `${entryName}.${format}.js`
     }
   }
 });
