@@ -18,9 +18,6 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.es.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     "./wallet": {
       "types": "./dist/wallet.d.ts",
@@ -31,6 +28,16 @@
       "types": "./dist/strategy.d.ts",
       "import": "./dist/strategy.es.js",
       "require": "./dist/strategy.cjs.js"
+    },
+    "./theme": {
+      "types": "./dist/theme.d.ts",
+      "import": "./dist/theme.es.js",
+      "require": "./dist/theme.cjs.js"
+    },
+    "./config": {
+      "types": "./dist/config.d.ts",
+      "import": "./dist/config.es.js",
+      "require": "./dist/config.cjs.js"
     }
   },
   "devDependencies": {
