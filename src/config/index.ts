@@ -15,3 +15,8 @@ export interface Config {
   /** Custom Arweave gateway configuration */
   gatewayConfig?: GatewayConfig;
 }
+
+export const defaultConfig: Config = {
+  permissions: ["ACCESS_ADDRESS", "ACCESS_ALL_ADDRESSES"],
+  ensurePermissions: false
+};
