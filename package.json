@@ -1,0 +1,38 @@
+{
+  "name": "@arweave-wallet-kit/core",
+  "version": "0.0.1",
+  "description": "Core module for the Arweave Wallet Kit",
+  "repository": "https://github.com/labscommunity/arweave-wallet-kit-core",
+  "author": "Marton Lederer <marton@lederer.hu>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "fmt": "prettier . --write"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.3",
+    "vite-plugin-dts": "^3.2.0"
+  }
+}
