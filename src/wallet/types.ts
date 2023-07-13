@@ -165,9 +165,3 @@ export interface GatewayConfig {
   port: number;
   protocol: "http" | "https";
 }
-
-declare global {
-  interface Window {
-    arweaveWallet?: ArweaveWalletApi;
-  }
-}
