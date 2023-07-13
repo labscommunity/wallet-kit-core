@@ -6,4 +6,9 @@ declare global {
   interface Window {
     arweaveWallet?: ArweaveWalletApi;
   }
+
+  interface WindowEventMap {
+    walletSwitch: CustomEvent<{ address: string }>;
+    arweaveWalletLoaded: CustomEvent<{}>;
+  }
 }
