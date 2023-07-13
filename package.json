@@ -40,6 +40,14 @@
       "require": "./dist/config.cjs.js"
     }
   },
+  "typesVersions": {
+    "*": {
+      "wallet": ["./dist/wallet.d.ts"],
+      "strategy": ["./dist/strategy.d.ts"],
+      "theme": ["./dist/theme.d.ts"],
+      "config": ["./dist/config.d.ts"]
+    }
+  },
   "devDependencies": {
     "@types/node": "^20.4.1",
     "arweave": "^1.14.0",
