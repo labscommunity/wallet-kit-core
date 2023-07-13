@@ -1,6 +1,6 @@
 {
   "name": "@arweave-wallet-kit/core",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.1-beta.1",
   "description": "Core module for the Arweave Wallet Kit",
   "repository": "https://github.com/labscommunity/arweave-wallet-kit-core",
   "author": "Marton Lederer <marton@lederer.hu>",
@@ -42,10 +42,18 @@
   },
   "typesVersions": {
     "*": {
-      "wallet": ["./dist/wallet.d.ts"],
-      "strategy": ["./dist/strategy.d.ts"],
-      "theme": ["./dist/theme.d.ts"],
-      "config": ["./dist/config.d.ts"]
+      "wallet": [
+        "./dist/wallet.d.ts"
+      ],
+      "strategy": [
+        "./dist/strategy.d.ts"
+      ],
+      "theme": [
+        "./dist/theme.d.ts"
+      ],
+      "config": [
+        "./dist/config.d.ts"
+      ]
     }
   },
   "devDependencies": {
