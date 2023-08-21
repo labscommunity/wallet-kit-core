@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.4.1",
-    "arweave": "^1.14.0",
+    "arweave": "^1.12.2",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.3",
