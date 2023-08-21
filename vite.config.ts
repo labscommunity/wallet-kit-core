@@ -1,10 +1,16 @@
+import { nodePolyfills } from "vite-plugin-node-polyfills";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import path from "node:path";
 
 export default defineConfig({
   plugins: [
-    dts({ insertTypesEntry: true })
+    dts({ insertTypesEntry: true }),
+    nodePolyfills({
+      globals: {
+        Buffer: true
+      }
+    })
   ],
   build: {
     lib: {
