@@ -1,4 +1,4 @@
-import { SignatureOptions } from "arweave/node/lib/crypto/crypto-interface";
+import { SignatureOptions } from "arweave/web/lib/crypto/crypto-interface";
 import type Transaction from "arweave/web/lib/transaction";
 import { PermissionType } from "./permissions";
 
