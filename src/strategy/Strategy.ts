@@ -39,11 +39,11 @@ export default abstract class Strategy {
   public abstract getWalletNames(): Promise<{ [addr: string]: string }>;
   public abstract encrypt(
     data: BufferSource,
-    algorithm: RsaOaepParams | AesCtrParams | AesCbcParams | AesGcmParams
+    algorithm?: RsaOaepParams | AesCtrParams | AesCbcParams | AesGcmParams
   ): Promise<Uint8Array>;
   public abstract decrypt(
     data: BufferSource,
-    algorithm: RsaOaepParams | AesCtrParams | AesCbcParams | AesGcmParams
+    algorithm?: RsaOaepParams | AesCtrParams | AesCbcParams | AesGcmParams
   ): Promise<Uint8Array>;
   public abstract getArweaveConfig(): Promise<GatewayConfig>;
   public abstract signature(
